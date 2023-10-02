@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
 }
+
 .nav__right {
     display: flex;
     align-items: center;
@@ -54,7 +55,7 @@
 .nav__button:active {
     color: #0075BE;
     border-bottom: 2px solid #ffcb05;
-} 
+}
 
 ul {
     list-style: none;
@@ -66,8 +67,78 @@ a {
 
 /* Main Page */
 
-/* About Us */ 
+/* About Us */
 
 /* Sign Up */
 
 /* Log In */
+
+/* Footer */
+footer {
+    position: absolute;
+    display: flex;
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    bottom: 0;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.copyright {
+    position: relative;
+    text-align: center;
+    bottom: 40px;
+}
+
+.pokeball {
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 20px
+}
+
+.footer-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-ul {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    font-size: 25px;
+    bottom: 30px;
+    left: 22px;
+}
+
+.footer-link {
+    border-right: solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-last-link {
+    border-right: none;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+footer li:hover {
+    background-color: lightgray;
+}
+
+/*
+right: 25px;
+    box-sizing: border-box;
+
+} */
