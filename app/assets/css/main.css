@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'VT323', monospace;
+}
+
+/*/ Navigation Bar */
+.navbar {
+    background-color: #000000;
+}
+
+.nav__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__left {
+    display: flex;
+    align-items: center;
+}
+.nav__right {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo {
+    max-width: 100px;
+}
+
+.nav__lists {
+    display: flex;
+}
+
+.nav__list {
+    margin-right: 15px;
+}
+
+.nav__button {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.nav__button:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav__button:active {
+    color: #0075BE;
+    border-bottom: 2px solid #ffcb05;
+} 
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main Page */
+
+/* About Us */ 
+
+/* Sign Up */
+
+/* Log In */
