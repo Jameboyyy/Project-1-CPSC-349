@@ -68,6 +68,208 @@ a {
 /* Main Page */
 
 /* About Us */
+.who-are-we {
+    display: flex;
+    grid-area: who;
+    min-height: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.who-are-we h1 {
+    font-size: 4.5rem;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
+    background-image: url(../images/wallpaper.jpg);
+    padding: 40px;
+    align-items: center;
+    box-shadow: inset 0 -10px 10px -1px white;
+}
+
+.group {
+    max-height: 600px;
+    border-radius: 30px;
+}
+
+.main>h1 {
+    font-size: 80px;
+    width: 300px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.about-us {
+    grid-area: about;
+    background-color: #0075BE;
+    background: linear-gradient(white, #0075BE 2%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    min-height: 650px;
+}
+
+.about-us-text {
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+    width: 700px;
+    border: double;
+    padding: 10px;
+    align-self: center;
+    border-width: 15px;
+    box-shadow: -8px 8px 0px 0px;
+}
+
+.about-us-text h2,
+.team-members h2 {
+    font-size: 2.5rem;
+}
+
+.about-us-text p,
+.team-members p {
+    font-size: 2rem;
+}
+
+.squirtle {
+    height: 500px;
+    align-self: center;
+}
+
+.team-members {
+    box-sizing: border-box;
+    grid-area: team;
+    background: linear-gradient(#0075BE, #ffcb05 2%);
+    display: flex;
+    flex-wrap: wrap-reverse;
+    min-height: 650px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.team-members-text {
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+    width: 700px;
+    border: double;
+    align-self: center;
+    border-width: 15px;
+    box-shadow: 8px 8px;
+}
+
+.name-list {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name-list li {
+    width: 400px;
+    align-self: center;
+    margin: 20px;
+}
+
+.pikachu {
+    height: 500px;
+    align-self: center;
+}
+
+.contact-us {
+    box-sizing: border-box;
+    grid-area: contact;
+    font-size: 2.5rem;
+    background: linear-gradient(#ffcb05, #FB1B1B 2%);
+    min-height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form {
+    border: double;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    border-width: 15px;
+    box-shadow: -8px 8px 0px 0px;
+    width: 900px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    margin-left: 40px;
+}
+
+.form-text {
+    text-align: center;
+}
+
+.first-name,
+.last-name,
+.email,
+.comment {
+    font-family: 'Orbitron';
+}
+
+.first-name {
+    grid-area: first;
+    height: 30px;
+    font-size: 2rem;
+    border: solid;
+    border-width: 4px;
+    margin: 10px;
+    width: 500px;
+}
+
+.last-name {
+    grid-area: last;
+    height: 30px;
+    font-size: 2rem;
+    border: solid;
+    border-width: 4px;
+    margin: 10px;
+    width: 500px;
+}
+
+.email {
+    grid-area: email;
+    height: 30px;
+    font-size: 2rem;
+    border: solid;
+    border-width: 4px;
+    margin: 10px;
+    width: 500px;
+}
+
+.comment {
+    grid-area: comment;
+    font-size: 2rem;
+    border: solid;
+    border-width: 4px;
+    margin: 10px;
+    height: 100%;
+    max-width: 830px;
+    resize: none;
+}
+
+.charmander {
+    height: 500px;
+}
 
 /* Sign Up */
 
