@@ -11,6 +11,7 @@
 /*/ Navigation Bar */
 .navbar {
     background-color: #000000;
+    height: 10vh;
 }
 
 .nav__container {
@@ -71,3 +72,97 @@ a {
 /* Sign Up */
 
 /* Log In */
+
+#log--in__section {
+    background-color: #ffffff;
+}
+
+.log--in__container {
+    margin: 0 auto;
+    margin-top: 10vh;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+    border: 2px solid #000000;
+}
+
+.form__left,
+.form__right {
+    width: 70%;
+    height: 100%;
+}
+.form__left {
+    display: flex;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.log--in__form {
+    margin: 0 auto;
+}
+
+.log--in__title {
+    text-align: center;
+    font-size: 45px;
+    margin: 75px 0;
+}
+
+.input__login {
+    margin-bottom: 25px;
+    width: 400px;
+    height: 45px;
+    border:2px solid #ffcb05;
+    outline: none;
+    padding: 15px;
+}
+
+.input__button {
+    width: 400px;
+    height: 45px;
+    background-color: #fb1b1b;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.form__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #0075be;
+}
+
+.content__title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.content__sub--title {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.form__left .log--in__form {
+    background-color: #ffffff;
+}
+
+
+
+.content__form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form__img {
+    width: 200px;
+}
+
