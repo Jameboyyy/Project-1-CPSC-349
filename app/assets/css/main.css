@@ -93,10 +93,12 @@ a {
 }
 
 .group {
-    max-height: 400px;
+    max-height: 500px;
     max-width: 80%;
     border-radius: 60px;
-    padding-top: 20px;
+    border: double;
+    border-width: 15px;
+    margin-top: 10px;
 }
 
 .main>h1 {
@@ -169,7 +171,7 @@ a {
 }
 
 .pikachu {
-    height: 500px;
+    height: 100%;
     align-self: center;
 }
 
