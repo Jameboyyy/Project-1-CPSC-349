@@ -68,79 +68,67 @@ a {
 /* Main Page */
 
 /* About Us */
+.about-us-page {
+    height: 100%;
+    width: 100%;
+}
+
 .who-are-we {
     display: flex;
-    grid-area: who;
     min-height: 350px;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .who-are-we h1 {
-    font-size: 4.5rem;
+    font-size: 7rem;
 }
 
 .main {
-    grid-area: main;
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
-    justify-self: center;
-    width: 100%;
     background-image: url(../images/wallpaper.jpg);
-    padding: 40px;
-    align-items: center;
     box-shadow: inset 0 -10px 10px -1px white;
+    align-items: center;
+    min-height: 1000px;
+    flex-wrap: wrap;
 }
 
 .group {
-    max-height: 600px;
+    max-height: 500px;
     border-radius: 30px;
+    padding-top: 20px;
 }
 
 .main>h1 {
-    font-size: 80px;
-    width: 300px;
-    margin-left: 10px;
+    width: 500px;
+    font-size: 7rem;
     color: rgb(0, 0, 0);
+    padding-left: 20px;
 }
 
 .about-us {
-    grid-area: about;
-    background-color: #0075BE;
     background: linear-gradient(white, #0075BE 2%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    min-height: 650px;
+    min-height: 700px;
+    padding-top: 40px;
 }
 
 .about-us-text {
-    box-sizing: border-box;
     overflow: auto;
     text-align: center;
-    width: 700px;
     border: double;
-    padding: 10px;
+    padding: 30px;
     align-self: center;
     border-width: 15px;
     box-shadow: -8px 8px 0px 0px;
-}
-
-.about-us-text h2,
-.team-members h2 {
-    font-size: 2.5rem;
-}
-
-.about-us-text p,
-.team-members p {
-    font-size: 2rem;
+    max-width: 700px;
+    font-size: 40px;
 }
 
 .squirtle {
@@ -149,32 +137,32 @@ a {
 }
 
 .team-members {
-    box-sizing: border-box;
-    grid-area: team;
     background: linear-gradient(#0075BE, #ffcb05 2%);
     display: flex;
     flex-wrap: wrap-reverse;
-    min-height: 650px;
+    min-height: 700px;
     justify-content: space-evenly;
-    width: 100%;
+    padding-top: 40px;
 }
 
 .team-members-text {
-    box-sizing: border-box;
     overflow: auto;
     text-align: center;
-    width: 700px;
     border: double;
     align-self: center;
     border-width: 15px;
     box-shadow: 8px 8px;
+    max-width: 700px;
+    padding: 30px;
+    font-size: 40px;
 }
 
 .name-list {
     display: flex;
-    font-size: 2rem;
+    font-size: 40px;
     justify-content: center;
     flex-direction: column;
+    list-style-type: none;
 }
 
 .name-list li {
@@ -189,30 +177,23 @@ a {
 }
 
 .contact-us {
-    box-sizing: border-box;
-    grid-area: contact;
-    font-size: 2.5rem;
+    font-size: 40px;
     background: linear-gradient(#ffcb05, #FB1B1B 2%);
     min-height: 1000px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 40px;
 }
 
 .form {
     border: double;
     display: flex;
     flex-direction: column;
-    height: 700px;
     border-width: 15px;
     box-shadow: -8px 8px 0px 0px;
-    width: 900px;
-    box-sizing: border-box;
     padding-bottom: 30px;
-    margin-left: 40px;
 }
 
 .form-text {
@@ -221,9 +202,9 @@ a {
 
 .first-name,
 .last-name,
-.email,
-.comment {
-    font-family: 'Orbitron';
+.email {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .first-name {
@@ -244,6 +225,7 @@ a {
     border-width: 4px;
     margin: 10px;
     width: 500px;
+
 }
 
 .email {
@@ -257,13 +239,12 @@ a {
 }
 
 .comment {
-    grid-area: comment;
     font-size: 2rem;
     border: solid;
     border-width: 4px;
     margin: 10px;
     height: 100%;
-    max-width: 830px;
+    width: 700px;
     resize: none;
 }
 
@@ -277,13 +258,10 @@ a {
 
 /* Footer */
 footer {
-    position: absolute;
     display: flex;
     background-color: #000000;
-    width: 100%;
     color: white;
-    justify-content: center;
-    bottom: 0;
+    justify-content: end;
     align-items: center;
 }
 
@@ -300,9 +278,6 @@ footer {
 
 .pokeball {
     height: 200px;
-    position: absolute;
-    right: 0;
-    bottom: 20px
 }
 
 .footer-group {
@@ -311,6 +286,7 @@ footer {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    margin: auto;
 }
 
 .footer-ul {
