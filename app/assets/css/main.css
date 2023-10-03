@@ -175,7 +175,7 @@ a {
 .contact-us {
     font-size: 40px;
     background: linear-gradient(#ffcb05, #FB1B1B 2%);
-    min-height: 1000px;
+    min-height: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -185,7 +185,6 @@ a {
 
 .form {
     width: 700px;
-
     border: double;
     display: flex;
     flex-direction: column;
@@ -206,7 +205,6 @@ a {
 }
 
 .first-name {
-    grid-area: first;
     height: 30px;
     font-size: 2rem;
     border: solid;
@@ -216,7 +214,6 @@ a {
 }
 
 .last-name {
-    grid-area: last;
     height: 30px;
     font-size: 2rem;
     border: solid;
@@ -227,7 +224,6 @@ a {
 }
 
 .email {
-    grid-area: email;
     height: 30px;
     font-size: 2rem;
     border: solid;
@@ -242,7 +238,6 @@ a {
     border-width: 4px;
     margin: 10px;
     height: 200px;
-
     max-width: 550px;
     resize: none;
 }
