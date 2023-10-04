@@ -66,6 +66,56 @@ a {
 
 /* Main Page */
 
+#main {
+    font-size: 25px;
+}
+
+#main section {
+    display: flex;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#main article {
+    width: 50%;
+}
+
+#main section a {
+    background-color: #ffcb05;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+#main section ul {
+    padding-top: 20px;
+}
+
+#main section a:hover {
+    background-color: #caa305;
+}
+
+#main section img {
+    max-height: 300px;
+}
+
+#introduction {
+    background-color: #0075BE;
+}
+
+#trade {
+    background-color: #ffcb05;
+}
+
+#track {
+    background-color: #ffffff;
+}
+
 /* About Us */ 
 
 /* Sign Up */
