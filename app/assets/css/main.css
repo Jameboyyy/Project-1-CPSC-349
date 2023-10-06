@@ -97,10 +97,10 @@ a {
     max-height: 500px;
     max-width: 80%;
     border-radius: 30px;
-    border: inset;
-    border-width: 15px;
+    border: outset;
+    border-width: 5px;
     margin-top: 10px;
-    border-color: #000000;
+    border-color: #00b7ff;
 }
 
 .main>h1 {
