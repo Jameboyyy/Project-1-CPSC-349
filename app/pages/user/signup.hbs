@@ -1,7 +1,25 @@
-<form action="/user/signup" method="post">
-  <h1>Sign up</h1>
-  <input type="text" name="username" placeholder="Username" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="password" name="password" placeholder="Password" required>
-  <button type="submit">Sign up</button>
-</form>
+<section id="signup__section">
+  <div class="log--in__container">
+    <div class="form__left">
+      <form class="log--in__form" action="/user/signup" method="post">
+        <h1 class="log--in__title">Sign Up</h1>
+        <div class="input__container">
+          <label class="input__text" for="signup-username">Username</label>
+          <input class="input__login" type="text" id="signup-username" name="username" placeholder="Username" required>
+          <label class="input__text" for="signup-password">Password</label>
+          <input class="input__login" type="password" id="signup-password" name="password" placeholder="Password" required>
+          <button class="input__button" type="submit">Sign Up</button>
+        </div>
+        <p class="account__quest">Have an account?</p>
+        <a href="/user/login" class="toggle__link" data-target="#log--in__section" >Log In</a>
+      </form>
+    </div>
+    <div class="form__right">
+      <div class="content__form">
+        <img class="form__img" src="/assets/images/jameboyyy_pokemon_logo_for_pokemon_photo_website._sprite_style._3207e6bf-a902-4630-a04f-411f0dc55454.png" alt="">
+        <h3 class="content__title">PokeTrade</h3>
+        <h5 class="content__sub--title">CSUF's first Pokemon Trading Business</h5>
+      </div>
+    </div>
+  </div>
+</section>

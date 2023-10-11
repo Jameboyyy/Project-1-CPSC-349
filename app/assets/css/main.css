@@ -69,9 +69,13 @@ a {
 
 /* About Us */ 
 
-/* Sign Up */
+/* Sign Up & Log In */
 
 /* Log In */
+
+#signup__section {
+    background-color: #ffffff;
+}
 
 #log--in__section {
     background-color: #ffffff;
@@ -132,6 +136,26 @@ a {
     border: none;
 }
 
+.account__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot__p {
+    color: #000000;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggle__link {
+    color: #000000;
+    text-decoration: underline;
+}
+
+
 .form__right {
     display: flex;
     justify-content: center;
@@ -168,4 +192,3 @@ a {
 .form__img {
     width: 200px;
 }
-
