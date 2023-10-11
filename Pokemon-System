@@ -1,0 +1,193 @@
+<a href="https://www.pokemon.com/us/pokedex">Find your pokemon's picture to upload here!</a>
+<button class="card-button" new:pokemon>add pokemon</button>
+
+<div class="collection-container" object>
+    <div class="collection" array key="pokemons" sortable>
+        {{#for pokemon in pokemons}}
+        <div class="card" object>
+            <button class="card-button" remove>Remove</button>
+
+            <div class="top-bar" object>
+                <div class="name" object key:name="@innerText" edit:name>
+
+                    {{default pokemon.name "[Name]"}}
+                </div>
+
+                <div object class="level-container">
+                    <p>LV.</p>
+                    <div class="level" object key:level="@innerText" edit:level>
+
+                        {{default pokemon.level "[]"}}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pic-container" object key:pokemon-pic="@search">
+                <div>
+                    <img target:pokemon-pic="@attr:src" src="{{pokemon.pokemonPic}}">
+
+                </div>
+                <button class="card-button" edit:pokemon-pic>Add pic of pokemon</button>
+            </div>
+
+            <div class="description">
+                <div class="price-container">
+                    <p class="card-labels">Price</p>
+                    <div class="price" object key:price="@innerText" edit:price>
+
+                        {{default pokemon.price "[Price]"}}
+                    </div>
+                </div>
+
+                <div class="type-container">
+                    <p class="card-labels">Type(s)</p>
+                    <div class="type" object key:type="@innerText" edit:type>
+
+                        {{default pokemon.type "[Type]"}}
+                    </div>
+                </div>
+
+                <div class="abilities-container">
+                    <p class="card-labels">Moves</p>
+                    <div array key="abilities">
+                        {{#for ability in pokemon.abilities}}
+                        <div class="ability" object key:ability-name="@innerText" edit:ability-name>
+                            {{default ability.abilityName "[Move]"}}
+                        </div>
+
+                        {{/for}}
+                    </div>
+                    {{!-- <button class="card-button" new:ability>New move</button> --}}
+                </div>
+
+                <div class="hp-container">
+                    <p class="card-labels">Hit Points</p>
+                    <div class="hp" object key:hp="@innerText" edit:hp>
+
+                        {{default pokemon.hp "[HP]"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{/for}}
+
+    </div>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .collection-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        .collection-container>button {
+            width: 114px;
+            height: 29px;
+        }
+
+        .collection {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .card {
+            font-size: 23px;
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 700px;
+            background-color: rgb(255, 209, 209);
+            border: solid;
+            border-width: 5px;
+            border-radius: 10px;
+            margin: 10px;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .top-bar {
+            display: flex;
+            background-color: transparent;
+            width: 100%;
+            height: 40px;
+            position: relative;
+            align-items: center;
+            border-radius: 10px;
+
+        }
+
+        .level-container {
+            display: flex;
+        }
+
+        .level {
+            padding-right: 10px;
+            display: flex;
+            margin-left: auto;
+        }
+
+        .name {
+            padding-left: 10px;
+
+            margin-right: auto;
+        }
+
+        .pic-container {
+            width: 260px;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            background-color: #FB1B1B;
+            background-color: rgb(235, 235, 235);
+            align-items: center;
+            border: solid;
+            margin: 10px;
+        }
+
+        img {
+            width: 215px;
+            height: 215px;
+        }
+
+        .description {
+            display: grid;
+            max-height: 170px;
+            flex: 1;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            max-width: 280px;
+            gap: 15px;
+        }
+
+        .price-container,
+        .type-container,
+        .abilities-container,
+        .hp-container {
+            text-align: center;
+            margin: 10px;
+
+        }
+
+        .card-labels {
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        .ability {
+            margin-bottom: 15px;
+            word-break: normal;
+        }
+
+        .card-button {
+            font-size: 23px;
+
+        }
+    </style>
