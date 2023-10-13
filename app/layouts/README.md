@@ -1,25 +1,18 @@
-# Layout templates
+Group Members:
 
-* Every template in Remake uses Handlebars to render itself (https://handlebarsjs.com/)
-* Every template in Remake gets access to the same template variables (https://docs.remaketheweb.com/templating/), as well as any data that you define in `/app/data/global.json`
+Kevin Ponting
+James-Daniel Cadavona
+Cyrus Traeh BayBay
+Ashton Yoshino
 
-# Tip
+What We Learned:
 
-You don't need to load Remake's front-end JS file if a user can't edit the page. So, if
-you create a new layout template, you can use the following code to make sure it's loaded if the page's author is the current user.
+Using Handlebar files was new to all of us. At first, it was difficult figuring out how it worked, but after reading documentation it made much more sense. It actually made it a lot easier to develop the pages because of the templates we could create. This also applied to us having to use Remake. For some of us, this was our first group project in a computer science class, but we enjoyed getting some experience with this type of assignment and more with HTML and CSS.
 
-```
-{{#if isPageAuthor}}
-  {{!-- Prevent loading the Remake framework if the page isn't editable --}}
-  <script src="/js/remake-init.js"></script>
-{{/if}}
-```
+Files:
 
-# Layouts
-
-In order to use a layout other than the default one, add the following to the top of a page template:
-
-```
-{{ layout "layout-name" }}
-```
-
+landing page = index.hbs
+account creation page = signup.hbs
+login page = login.hbs
+main page = app-index.hbs
+about us page = about-us.hbs
