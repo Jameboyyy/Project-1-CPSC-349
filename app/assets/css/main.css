@@ -101,8 +101,10 @@ a {
     background-color: #caa305;
 }
 
-#main section img {
+
+.main__img {
     max-height: 300px;
+    border-radius: 25px;
 }
 
 #introduction {
@@ -503,7 +505,7 @@ footer {
 }
 
 .pokeball {
-    height: 150px;
+    height: 100px;
     position: absolute;
     right: 0;
 }
@@ -531,11 +533,15 @@ footer {
     padding-right: 20px;
 }
 
+
 .footer-last-link {
     border-right: none;
     padding-left: 20px;
     padding-right: 20px;
+}
 
+.footer__link:visited {
+    color: #f6f9f6;
 }
 
 footer li:hover {
