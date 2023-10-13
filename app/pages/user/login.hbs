@@ -1,7 +1,30 @@
-<form action="/user/login" method="post">
-  <h1>Log in</h1>
-  <input type="text" name="username" placeholder="username" required>
-  <input type="password" name="password" placeholder="password" required>
-  <a href="/user/forgot">Forgot your password?</a>
-  <button type="submit">Log in</button>
-</form>
+<section id="log--in__section">
+<div class="log--in__container">
+  <div class="form__left">
+    <form class="log--in__form" action="/user/login" method="post">
+      <h1 class="log--in__title" >Log in</h1>
+      <div class="input__container">
+        <label class="input__text" for="">Username</label>
+        <input class="input__login" type="text" name="username" placeholder="Username" required>
+        <label class="input__text" for="">Password</label>
+        <input class="input__login" type="password" name="password" placeholder="Password" required>
+        <button class="input__button" type="submit">Log in</button>
+      </div>
+      <div class="account__info">
+        <a class="forgot__p" href="/user/forgot">Forgot your password?</a>
+        <div class="account__right">
+          <p class="account__quest">Don't have an account?</p>
+          <a class="toggle__link right" data-target="#signup__section" href="/user/signup">Sign Up</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="form__right">
+    <div class="content__form">
+      <img class="form__img" src="/assets/images/jameboyyy_pokemon_logo_for_pokemon_photo_website._sprite_style._3207e6bf-a902-4630-a04f-411f0dc55454.png" alt="">
+      <h3 class="content__title">PokeTrade</h3>
+      <h5 class="content__sub--title">CSUF's first Pokemon Trading Business</h5>
+    </div>
+  </div>
+</div>
+</section>
