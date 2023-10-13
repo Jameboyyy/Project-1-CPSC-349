@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
 }
+
 .nav__right {
     display: flex;
     align-items: center;
@@ -55,7 +56,7 @@
 .nav__button:active {
     color: #0075BE;
     border-bottom: 2px solid #ffcb05;
-} 
+}
 
 ul {
     list-style: none;
@@ -166,7 +167,196 @@ a {
     margin-top: 10px;
 }
 
-/* About Us */ 
+/* About Us */
+.who-are-we {
+    display: flex;
+    min-height: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+.who-are-we h1 {
+    font-size: 90px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/wallpaper.jpg);
+    box-shadow: inset 0 -10px 10px -1px white;
+    align-items: center;
+    min-height: 700px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.group {
+    max-height: 500px;
+    max-width: 80%;
+    border-radius: 30px;
+    border: outset;
+    border-width: 5px;
+    margin-top: 10px;
+    border-color: #00b7ff;
+}
+
+.main>h1 {
+    width: 400px;
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+}
+
+.about-us {
+    background-color: #0075BE;
+    background: linear-gradient(white, #0075BE 1%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 700px;
+    padding-top: 40px;
+}
+
+.about-us-text {
+    overflow: auto;
+    text-align: center;
+    border: double;
+    padding: 30px;
+    align-self: center;
+    border-width: 15px;
+    box-shadow: -8px 8px 0px 0px;
+    width: 700px;
+    font-size: 40px;
+    border-radius: 30px;
+
+}
+
+.squirtle {
+    height: 100%;
+    align-self: center;
+}
+
+.team-members {
+    background-color: #ffcb05;
+    background: linear-gradient(#0075BE, #ffcb05 1%);
+    display: flex;
+    flex-wrap: wrap-reverse;
+    min-height: 700px;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.team-members-text {
+    overflow: auto;
+    text-align: center;
+    border: double;
+    align-self: center;
+    border-width: 15px;
+    box-shadow: 8px 8px;
+    width: 700px;
+    padding: 30px;
+    font-size: 40px;
+    border-radius: 30px;
+}
+
+.name-list {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.name-list li {
+    width: 400px;
+    align-self: center;
+    margin: 20px;
+}
+
+.pikachu {
+    height: 100%;
+    align-self: center;
+}
+
+.contact-us {
+    font-size: 40px;
+    background-color: #FB1B1B;
+    background: linear-gradient(#ffcb05, #FB1B1B 1%);
+    min-height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.form {
+    width: 700px;
+    border: double;
+    display: flex;
+    flex-direction: column;
+    border-width: 15px;
+    box-shadow: -8px 8px 0px 0px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+}
+
+.form-text {
+    text-align: center;
+}
+
+.first-name,
+.last-name,
+.email {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.first-name {
+    height: 30px;
+    font-size: 2rem;
+    border: solid;
+    border-width: 4px;
+    margin: 10px;
+    max-width: 55%;
+}
+
+.last-name {
+    height: 30px;
+    font-size: 2rem;
+    border: solid;
+    border-width: 4px;
+    margin: 10px;
+    max-width: 55%;
+}
+
+.email {
+    height: 30px;
+    font-size: 2rem;
+    border: solid;
+    border-width: 4px;
+    margin: 10px;
+    max-width: 55%;
+}
+
+.comment {
+    font-size: 2rem;
+    border: solid;
+    border-width: 4px;
+    margin: 10px;
+    height: 200px;
+    max-width: 100%;
+
+    resize: none;
+}
+
+.charmander {
+    height: 100%;
+}
 
 /* Sign Up & Log In */
 
@@ -290,4 +480,64 @@ a {
 
 .form__img {
     width: 200px;
+}
+/* Footer */
+footer {
+    display: flex;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.copyright {
+    position: relative;
+    text-align: center;
+    bottom: 40px;
+}
+
+.pokeball {
+    height: 150px;
+    position: absolute;
+    right: 0;
+}
+
+.footer-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-ul {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    font-size: 25px;
+    bottom: 30px;
+    left: 7px;
+}
+
+.footer-link {
+    border-right: solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-last-link {
+    border-right: none;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+footer li:hover {
+    background-color: lightgray;
 }
