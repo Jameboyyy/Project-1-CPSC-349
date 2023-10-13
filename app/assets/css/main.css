@@ -169,6 +169,10 @@ a {
     margin-top: 10px;
 }
 
+.main__sub--title:hover {
+    text-decoration: underline;
+}
+
 /* About Us */
 .who-are-we {
     display: flex;
