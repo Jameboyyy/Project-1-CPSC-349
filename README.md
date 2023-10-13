@@ -1,9 +1,9 @@
 Group Members:
 
-Kevin Ponting
-James-Daniel Cadavona
-Cyrus Traeh BayBay
-Ashton Yoshino
+Kevin Ponting,
+James-Daniel Cadavona,
+Cyrus Traeh BayBay,
+Ashton Yoshino,
 
 What We Learned:
 
@@ -11,10 +11,10 @@ Using Handlebar files was new to all of us. At first, it was difficult figuring 
 
 Files:
 
-landing page = index.hbs
-account creation page = signup.hbs
-login page = login.hbs
-main page = app-index.hbs
-about us page = about-us.hbs
-wireframes = wireframes folder
+landing page = index.hbs, 
+account creation page = signup.hbs, 
+login page = login.hbs, 
+main page = app-index.hbs, 
+about us page = about-us.hbs, 
+wireframes = wireframes folder, 
 github repo link = github-repo-url.txt
